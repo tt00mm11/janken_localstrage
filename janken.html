@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>じゃんけん</title>
+  
+</head>
+
+<body>
+  <header>
+    <h1>じゃんけん</h1>
+  </header>
+
+  <main>
+    <h1>ルール</h1>
+    <h2>じゃんけん　（ビール・焼酎・ワイン・お茶が選べる）</h2>
+    <h2>勝＝０円　無料！</h2>
+    <h2>引＝-500円　500円で購入</h2>
+    <h2>敗＝−1000円　購入とG'S寄付</h2>
+    <h2>勝ちが10回以上でストップ</h2>
+    <h2>チャージ金額が０以下でストップ</h2>
+    <h2>じゃんけんの結果・回数、残金が記録される</h2>
+    
+    <ul>
+      <li id="gu_btn">グー</li>
+      <li id="cho_btn">チョキ</li>
+      <li id="par_btn">パー</li>
+    </ul>
+    <div id="com_hand">コンピュータの出した手は？</div>
+    <div id="result">結果は？</div>
+    <!-- <div id="winning_per">勝率は？</div> -->
+    <div id="game_count">回数は？</div>
+    <div id="winning_count">勝った回数は？</div>
+    <!-- <div id="drow_count">あいこ回数は？</div>
+    <div id="losing_count">負けた回数は？</div> -->
+    <div id="money_count">残金は？</div>
+
+  <!-- お金チャージ選択 -->
+    <select name="" id="select"></select>
+
+  <!-- 飲み物選択表示 -->
+    </div>
+    <select name="drink" id="select_dr">
+      <option name="beer">ビール</option>
+      <option name="sake">焼酎</option>
+      <option name="wine">ワイン</option>
+      <option name="tea">お茶</option>
+    </select>
+
+
+<!-- 保存エリア -->
+<!-- 結果、回数、残金を保存できる？  imput textの違い -->
+
+    <input type="game_count" id="game">
+    <input type="winning_count" id="winning">
+    <input type="money_count" id="money">
+
+    <ul>
+      <li id="save">Save</li>
+      <li id="clear">Clear</li>
+    </ul>
+
+  </main>
+
+  <footer>フッター</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="main.js"></script>
+
+  
+</body>
+
+</html>
